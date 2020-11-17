@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><style type="text/css">
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+</style><style type="text/css">
+.home-page {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 15px;
+}
+
+.items-display {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  align-items: center;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+</style><style type="text/css">.side-bar {
+  border-width: 1px;
+  border-color: rgb(0,0,0);
+  border-style: solid;
+  padding-bottom: 15px;
+  width: 33%;
+}
+
+.category-container {
+  margin-top: 15px;
+}
+
+.side-bar h3 {
+  text-align: center;
+}</style><style type="text/css">@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);</style><style type="text/css">.form-input-section {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 60%;
+  margin: 10px 0;
+}
+
+.form-inputs {
+  margin: 7px 0;
+}
+
+.email-and-stars {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  align-items: center;
+}
+
+.star-rating {
+  margin: auto;
+}
+
+.star-rating div {
+  margin: 0 5px;
+}
+
+.star-rating .fa-star {
+  color: rgba(0, 0, 0, 0.350);
+}
+
+.star-rating .checked {
+  color: rgb(218, 165, 32);
+}
+
+#email {
+  width: 40%
+}
+
+#message {
+  height: 40vh;
+}
+
+.form-button {
+  width: 15%;
+  padding: 10px;
+  margin: 1% 1% 1% 0;
+
+}</style><style type="text/css">.rating-history {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid black;
+  margin: 10px 10px;
+  padding: 10px;
+}
+
+.rating-column {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 60%;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  margin: auto;
+}</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="home-page"><aside class="side-bar"><h3>Categories:</h3><div class="category-container"><input type="radio" name="categories" id="MLB5672" data-testid="category"><label for="MLB5672">Acessórios para Veículos</label></div><div class="category-container"><input type="radio" name="categories" id="MLB271599" data-testid="category"><label for="MLB271599">Agro</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1403" data-testid="category"><label for="MLB1403">Alimentos e Bebidas</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1071" data-testid="category"><label for="MLB1071">Animais</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1367" data-testid="category"><label for="MLB1367">Antiguidades e Coleções</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1368" data-testid="category"><label for="MLB1368">Arte, Papelaria e Armarinho</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1384" data-testid="category"><label for="MLB1384">Bebês</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1246" data-testid="category"><label for="MLB1246">Beleza e Cuidado Pessoal</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1132" data-testid="category"><label for="MLB1132">Brinquedos e Hobbies</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1430" data-testid="category"><label for="MLB1430">Calçados, Roupas e Bolsas</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1039" data-testid="category"><label for="MLB1039">Câmeras e Acessórios</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1743" data-testid="category"><label for="MLB1743">Carros, Motos e Outros</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1574" data-testid="category"><label for="MLB1574">Casa, Móveis e Decoração</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1051" data-testid="category"><label for="MLB1051">Celulares e Telefones</label></div><div class="category-container"><input type="radio" name="categories" id="MLB5726" data-testid="category"><label for="MLB5726">Eletrodomésticos</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1000" data-testid="category"><label for="MLB1000">Eletrônicos, Áudio e Vídeo</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1276" data-testid="category"><label for="MLB1276">Esportes e Fitness</label></div><div class="category-container"><input type="radio" name="categories" id="MLB263532" data-testid="category"><label for="MLB263532">Ferramentas e Construção</label></div><div class="category-container"><input type="radio" name="categories" id="MLB12404" data-testid="category"><label for="MLB12404">Festas e Lembrancinhas</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1144" data-testid="category"><label for="MLB1144">Games</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1459" data-testid="category"><label for="MLB1459">Imóveis</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1499" data-testid="category"><label for="MLB1499">Indústria e Comércio</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1648" data-testid="category"><label for="MLB1648">Informática</label></div><div class="category-container"><input type="radio" name="categories" id="MLB218519" data-testid="category"><label for="MLB218519">Ingressos</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1182" data-testid="category"><label for="MLB1182">Instrumentos Musicais</label></div><div class="category-container"><input type="radio" name="categories" id="MLB3937" data-testid="category"><label for="MLB3937">Joias e Relógios</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1196" data-testid="category"><label for="MLB1196">Livros, Revistas e Comics</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1168" data-testid="category"><label for="MLB1168">Música, Filmes e Seriados</label></div><div class="category-container"><input type="radio" name="categories" id="MLB264586" data-testid="category"><label for="MLB264586">Saúde</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1540" data-testid="category"><label for="MLB1540">Serviços</label></div><div class="category-container"><input type="radio" name="categories" id="MLB1953" data-testid="category"><label for="MLB1953">Mais Categorias</label></div></aside><div class="items-display"><div class="search-container"><input name="searchInput" class="search-input" type="text" data-testid="query-input"></div><div><button data-testid="query-button" type="button">Search</button></div>[,  ....]<span data-testid="home-initial-message">Digite algum termo de pesquisa ou escolha uma categoria.</span></div><div><a data-testid="shopping-cart-button" href="http://localhost:3000/cart"><img src="./React App_files/addCart.bba0d047.svg" alt="button car shopping"></a></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./React App_files/bundle.js"></script><script src="./React App_files/1.chunk.js"></script><script src="./React App_files/main.chunk.js"></script><script src="./React App_files/main.6048349c443dd91fca20.hot-update.js"></script>
+
+</body></html>
