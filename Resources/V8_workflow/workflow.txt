@@ -1,0 +1,19 @@
+1. Recebe o código JavaScript como uma sequência de bytes vindo do NodeJS ou do navegador
+
+2. O decoder analisa o código caractere por caractere, gerando e enviando tokens para o parser
+
+3. O parser utiliza os tokens para gerar uma Abstract Syntax Tree (também chamada de AST; entenderemos melhor sobre ela mais à frente)
+
+4. O interpretador consome a AST e gera código de máquina
+
+5. O código gerado pelo interpretador é enviado ao processador para ser executado
+
+6. Dados sobre a execução desse código são coletados
+
+7. Caso o V8 detecte que uma função é utilizada com muita frequência, essa função é enviada ao otimizador
+
+8. O otimizador gera código de máquina otimizado e, portanto, mais rápido
+
+9. Caso utilizemos a função da mesma forma que estávamos utilizando antes, o código otimizado é utilizado ao invés do código original
+
+10. Se mudarmos a forma como usamos essa função, esse código otimizado é descartado, e o V8 volta para o passo 4, utilizando o código de máquina gerado inicialmente pelo interpretador
