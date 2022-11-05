@@ -1,0 +1,44 @@
+{
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.wordWrap": "on",
+    "workbench.editor.showTabs": true,
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "terminal.external.linuxExec": "/bin/bash",
+    "terminal.external.osxExec": "/bin/bash",
+    "cSpell.language": "en,pt",
+    "linter_codeclimate.enabled": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll.eslint": true
+    },
+    "eslint.workingDirectories": [
+      {
+        "mode": "auto"
+      }
+    ],
+    "[javascript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[csharp]": {
+      "editor.tabSize": 4,
+    },
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnSave": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "jira-plugin.workingProject": "",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "debug.javascript.autoAttachFilter": "smart",
+    "[scss]": {
+      "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "window.zoomLevel": 1
+}
