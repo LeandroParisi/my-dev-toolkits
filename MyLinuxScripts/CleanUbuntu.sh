@@ -1,4 +1,4 @@
-function myclean {
+function cleanUbuntu {
     ## Show free space
     df -Th | grep -v fs
     # Will need English output for processing

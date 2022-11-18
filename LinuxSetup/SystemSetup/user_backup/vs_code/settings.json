@@ -1,0 +1,26 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  },
+  "eslint.format.enable": true,
+  "jira-plugin.workingProject": "",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.settings.editor": "json",
+  "workbench.settings.useSplitJSON": true,
+  "cSpell.userWords": [
+    "fontawesome",
+    "fortawesome",
+    "linebreak",
+    "Middlewares",
+    "nextjs",
+    "trpc",
+    "websockets"
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "window.zoomLevel": 1
+}
