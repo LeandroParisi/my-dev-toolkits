@@ -1,11 +1,11 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
   {
-    "key": "ctrl+alt+a",
+    "key": "alt+s",
     "command": "workbench.action.toggleActivityBarVisibility"
   },
   {
-    "key": "ctrl+alt+s",
+    "key": "shift+alt+s",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -13,11 +13,11 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "ctrl+alt+q",
+    "key": "shift+alt+q",
     "command": "workbench.action.duplicateWorkspaceInNewWindow"
   },
   {
-    "key": "ctrl+alt+p",
+    "key": "shift+alt+a",
     "command": "workbench.action.pinEditor",
     "when": "!activeEditorIsPinned"
   },
@@ -27,7 +27,7 @@
     "when": "!activeEditorIsPinned"
   },
   {
-    "key": "ctrl+shift+alt+p",
+    "key": "alt+a",
     "command": "workbench.action.unpinEditor",
     "when": "activeEditorIsPinned"
   },
@@ -37,11 +37,63 @@
     "when": "activeEditorIsPinned"
   },
   {
-    "key": "ctrl+shift+alt+k ctrl+shift+alt+w",
+    "key": "shift+alt+x",
     "command": "workbench.action.closeEditorInAllGroups"
   },
   {
     "key": "ctrl+alt+w",
     "command": "workbench.action.terminal.detachSession"
+  },
+  {
+    "key": "shift+alt+d",
+    "command": "workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "-workbench.view.debug",
+    "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+    "key": "shift+alt+x",
+    "command": "workbench.action.closeAllEditors"
+  },
+  {
+    "key": "ctrl+k ctrl+w",
+    "command": "-workbench.action.closeAllEditors"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "ctrl+shift+[BracketLeft]",
+    "command": "-workbench.action.terminal.toggleTerminal",
+    "when": "terminal.active"
+  },
+  {
+    "key": "shift+alt+r",
+    "command": "editor.action.referenceSearch.trigger"
+  },
+  {
+    "key": "alt+i",
+    "command": "extension.createSnipp",
+    "when": "editorHasSelection"
+  },
+  {
+    "key": "shift+meta+c",
+    "command": "-extension.createSnipp",
+    "when": "editorHasSelection"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "extension.insertSnipp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+meta+i",
+    "command": "-extension.insertSnipp",
+    "when": "editorTextFocus"
   }
 ]

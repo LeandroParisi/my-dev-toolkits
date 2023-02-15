@@ -18,6 +18,25 @@ function magicCommitN() {
     git push
 }
 
+# Magic Commit Aliases
+function mc() {
+    git add .
+    git commit -m "$1"
+    git push
+}
+
+function mcu() {
+    git add .
+    git commit -a -m "$1"
+    git push -u origin "$2"
+}
+
+function mcn() {
+    git add .
+    git commit -n -m "$1"
+    git push
+}
+
 function cloneBareForWorktrees() {
     set -e
 
@@ -113,7 +132,7 @@ alias dup='docker-compose up -d';
 alias dsa='docker container stop $(docker container ls -aq)';
 alias dra='docker container rm $(docker ps -a -q)';
 alias dls='docker container ls';
-alias dka='docker kill $(docker ps -q)';
+alias dka='dsa && dra';
 alias dpa='docker container prune';
 
 alias dockerAliases='printf "du -> docker up\ndsa -> docker stop all\ndka -> docker kill all\ndls -> docker container ls\ndra -> docker remove all\ndpa -> prune all containers"';
