@@ -1,6 +1,11 @@
-2. Using Android Emulator:
+https://vitux.com/how-to-install-android-studio-on-ubuntu/
+ Using Android Emulator:
    1. Linux:
-      1. Install Android SDK: 
+      1. Install Java SDK:
+      ```sh
+      sudo apt install openjdk-11-jdk
+      ```
+      2. Install Android SDK: 
       ```sh
       sudo apt update && sudo apt install android-sdk
       ```
