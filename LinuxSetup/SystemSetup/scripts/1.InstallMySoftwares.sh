@@ -11,19 +11,19 @@ function notify_instalation() {
 
 cd ../dpkg_packages
 
-# sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade
 
 ## General packages
-# sudo apt install curl
+sudo apt install curl
 
 ## Chrome
-# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-# sudo dpkg -i google-chrome-stable_current_amd64.deb
-# notify_instalation_configure "Chrome"
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+notify_instalation_configure "Chrome"
 
 ## VLC
-# sudo apt install vlc
-# notify_instalation "VLC"
+sudo apt install vlc
+notify_instalation "VLC"
 
 ## Discord
 ## https://linuxhint.com/install-discord-ubuntu22-04/
