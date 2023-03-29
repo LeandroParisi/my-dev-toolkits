@@ -129,6 +129,7 @@ alias gitPushAll='ls | xargs -I{} sh -c "(echo 'Executing script on {} \n' && cd
 #####################################
 # Docker aliases
 alias dup='docker-compose up -d';
+alias drv='docker volume rm $(docker volume ls -q)';
 alias dsa='docker container stop $(docker container ls -aq)';
 alias dra='docker container rm $(docker ps -a -q)';
 alias dls='docker container ls';
