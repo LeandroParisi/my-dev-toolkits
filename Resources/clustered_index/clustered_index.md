@@ -1,0 +1,1 @@
+[Explanation](https://stackoverflow.com/questions/32969559/understanding-clustered-index)
