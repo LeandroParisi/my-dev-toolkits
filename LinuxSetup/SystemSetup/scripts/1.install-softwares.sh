@@ -17,9 +17,9 @@ sudo apt update && sudo apt upgrade
 sudo apt install curl
 
 ## Chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-notify_instalation_configure "Chrome"
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# sudo dpkg -i google-chrome-stable_current_amd64.deb
+# notify_instalation_configure "Chrome"
 
 ## VLC
 sudo apt install vlc
@@ -34,6 +34,11 @@ notify_instalation_configure "Discord"
 ## https://linuxize.com/post/how-to-install-slack-on-ubuntu-20-04/
 sudo snap install slack --classic
 notify_instalation_configure "Slack"
+
+## Transmission
+## https://linuxize.com/post/how-to-install-slack-on-ubuntu-20-04/
+sudo snap install transmission
+notify_instalation_configure "Transmission"
 
 ## DejaDup
 sudo apt install deja-dup
@@ -55,10 +60,10 @@ sudo apt-get install zsh
 # sudo apt-get install git
 
 ## NVM && NPM && Yarn
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+sudo curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 sudo nvm install 16
 sudo apt install npm
-npm install --global yarn
+sudo npm install --global yarn
 
 sudo apt update && sudo apt upgrade
 
