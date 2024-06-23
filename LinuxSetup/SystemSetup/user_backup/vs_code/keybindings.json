@@ -73,27 +73,11 @@
     "when": "terminal.active"
   },
   {
-    "key": "shift+alt+r",
-    "command": "editor.action.referenceSearch.trigger"
+    "key": "ctrl+shift+=",
+    "command": "editor.action.fontZoomIn"
   },
   {
-    "key": "alt+i",
-    "command": "extension.createSnipp",
-    "when": "editorHasSelection"
-  },
-  {
-    "key": "shift+meta+c",
-    "command": "-extension.createSnipp",
-    "when": "editorHasSelection"
-  },
-  {
-    "key": "shift+alt+i",
-    "command": "extension.insertSnipp",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+meta+i",
-    "command": "-extension.insertSnipp",
-    "when": "editorTextFocus"
+    "key": "ctrl+-",
+    "command": "editor.action.fontZoomOut"
   }
 ]

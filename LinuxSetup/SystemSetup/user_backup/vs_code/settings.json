@@ -1,7 +1,7 @@
 {
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll.eslint": true
+    "source.organizeImports": "explicit",
+    "source.fixAll.eslint": "explicit"
   },
   "eslint.format.enable": true,
   "jira-plugin.workingProject": "",
@@ -23,5 +23,41 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "window.zoomLevel": 1
+  "editor.formatOnSave": true,
+  "editor.largeFileOptimizations": false,
+  "editor.unicodeHighlight.nonBasicASCII": false,
+  "explorer.confirmDelete": false,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "jest.autoRevealOutput": "off",
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[csharp]": {
+    "editor.maxTokenizationLineLength": 2500
+  },
+  "editor.inlineSuggest.enabled": true,
+  "githubPullRequests.fileListLayout": "tree",
+  "dotnet.server.useOmnisharp": true,
+  "githubPullRequests.pullBranch": "never",
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "Codegeex.Privacy": true,
+  "[sql]": {
+    "editor.defaultFormatter": "cymonk.sql-formatter"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  "google-translate.firstLanguage": "de-en",
+  "vscodeGoogleTranslate.preferredLanguage": "English",
+  "playwright.reuseBrowser": true,
+  "workbench.colorTheme": "Default Dark Modern",
+  "prisma.showPrismaDataPlatformNotification": false,
+  "github.copilot.editor.enableAutoCompletions": true
 }
