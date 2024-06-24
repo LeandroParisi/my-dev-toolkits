@@ -65,6 +65,8 @@ sudo nvm install 16
 sudo apt install npm
 sudo npm install --global yarn
 
+sudo curl -fsSL https://get.pnpm.io/install.sh | sh -
+
 sudo apt update && sudo apt upgrade
 
 cd ../scripts
