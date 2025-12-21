@@ -124,7 +124,8 @@ alias soundControl='pavucontrol'
 # Git aliases
 
 alias gitCustomActions='magicCommit <commit message>, magicCommitU <commit message> <repo name>, magicoCommitN <commit message>';
-alias gitPushAll='ls | xargs -I{} sh -c "(echo 'Executing script on {} \n' && cd {} && git add . && git commit -n -m 'updating' && git push && echo '\n-------\n')"'
+alias gitPushAll='ls | xargs -I{} sh -c "(echo 'Executing script on {} \n' && cd {} && git add . && git commit -n -m 'updating' && git push && echo '\n-------\n')"';
+alias gitStatusAll='ls | xargs -I{} sh -c "(echo 'Executing script on {} \n' && cd {} && git status && echo '\n-------\n')"';
 
 #####################################
 # Docker aliases
@@ -156,5 +157,7 @@ alias deleteAllMergedBranches='git branch -r --merged | egrep -v "(^\*|master|ma
 
 
 alias act='/bin/act'
+
+alias electrum='/home/leandro-parisi/Applications/ElectrumWallet.AppImage'
 
 ## Leandro Parisi Scripts>
